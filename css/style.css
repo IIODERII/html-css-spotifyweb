@@ -65,12 +65,22 @@ body{
 /* *****************************************
                effetti hover
 ***************************************** */
+.hov-font{
+    transition: all 0.2s;
+}
+
+.hov-font:hover{
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
 .hov-scale{
     transition: all 0.2s;
 }
 
 .hov-scale:hover{
-    font-size: 1.1em;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .hov-white{
@@ -79,6 +89,7 @@ body{
 
 .hov-white:hover{
     color: var(--color-white);
+    cursor: pointer;
 }
 
 .hov-highlight-h::after{
@@ -114,6 +125,15 @@ body{
 
 .hov-highlight-v:hover::before{
     opacity: 1;
+}
+
+.hov-underline:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.bars:hover .hov-green{
+    background-color: var(--color-highlight);
 }
 
 /* *****************************************
@@ -207,7 +227,7 @@ img{
 ******************************************/
 main{
     width: 100%;
-    height: calc(100% - 90px);
+    height: calc(100% - 120px);
     overflow-y: hidden;
 }
 
@@ -395,6 +415,10 @@ main nav ul li a{
     background-color: var(--color-dark-grey);
 }
 
+.playbar i{
+    cursor: pointer;
+}
+
 .playside{
     width: 20%;
     padding: 20px;
@@ -412,6 +436,7 @@ main nav ul li a{
 .playside .fa-regular:hover{
     cursor: pointer;
     font-weight: 600;
+    color: var(--color-white);
 }
 
 .playside ul li{
@@ -419,7 +444,7 @@ main nav ul li a{
     color: var(--color-white);
 }
 
-.playside .fa-solid.fa-circle{
+.bars .fa-solid.fa-circle{
     font-size: 1.2em;
     display: none;
 }
@@ -431,6 +456,10 @@ main nav ul li a{
     border-radius: 5px;
 }
 
+.bars{
+    width: 100%;
+}
+
 .playside ul .act-vol{
     width: 25%;
     height: 5px;
@@ -438,15 +467,15 @@ main nav ul li a{
     border-radius: 5px;
 }
 
-.playside ul li:last-child{
+.bars{
     position: relative;
 }
 
-.playside ul li:last-child:hover > .fa-solid.fa-circle{
+.bars:hover > .fa-solid.fa-circle{
     display: inline-block;
     position: absolute;
     bottom: -7px;
-    right: 150px;
+    left: 24%;
     cursor: grab;
 }
 
@@ -472,13 +501,14 @@ main nav ul li a{
     border-radius: 5px;
 }
 
-.playcenter .duration .current{
+.current{
     height: 5px;
     width: 25%;
     background-color: var(--color-light-grey);
     border-radius: 5px;
 }
-
 /* *****************************************
                media query
 ***************************************** */
+
+
