@@ -73,6 +73,49 @@ body{
     font-size: 1.1em;
 }
 
+.hov-white{
+    transition: all 0.1s;
+}
+
+.hov-white:hover{
+    color: var(--color-white);
+}
+
+.hov-highlight-h::after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    height: 3px;
+    background-color: var(--color-highlight);
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.2s;
+    opacity: 0;  
+}
+
+.hov-highlight-h:hover::after{
+    opacity: 1;
+}
+
+.hov-highlight-v::before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 1.5em;
+    width: 4px;
+    background-color: var(--color-highlight);
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    transition: all 0.2s;
+    opacity: 0;  
+}
+
+.hov-highlight-v:hover::before{
+    opacity: 1;
+}
+
 /* *****************************************
                flex utilities
 ***************************************** */
@@ -165,6 +208,7 @@ img{
 main{
     width: 100%;
     height: calc(100% - 90px);
+    overflow-y: hidden;
 }
 
 /* *****************************************
@@ -173,6 +217,76 @@ main{
 .sidebar{
     width: 250px;
     background-color: var(--color-black);
+    position: relative;
+}
+
+.sidebar .sidebar-top > img{
+    width: 50%;
+    margin: 10px 40px 20px;
+}
+
+.sidebar a img{
+    width: 1.5em;
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+.sidebar h3{
+    padding: 15px 30px;
+}
+
+.sidebar .fa-solid.fa-square-plus{
+    font-size: 3em;
+    vertical-align: middle;
+}
+
+.sidebar .sidebar-top{
+    position: relative;
+    z-index: 2;
+    background-color: var(--color-black);
+}
+
+.sidebar .sidebar-bot{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    margin: 0 auto;
+    width: 90%;
+    background-color: var(--color-black);
+    padding-bottom: 10px;
+    z-index: 1;
+}
+
+.sidebar .sidebar-bot > div{
+    padding: 10px 0;
+}
+
+.sidebar .sidebar-bot img{
+    width: 1.5em;
+    vertical-align: middle;
+}
+
+.sidebar .sidebar-bot .profile{
+    width: 2em;
+    height: 2em;
+    background-color: var(--color-grey);
+    border-radius: 50%;
+}
+
+.sidebar-bot>div:first-child{
+    line-height: 3em;
+}
+
+.sidebar-bot>div:first-child::after{
+    content: "";
+    display: block;
+    width: 90%;
+    height: 1px;
+    background-color: var(--color-light-grey);
+}
+
+.sidebar-bot strong{
+    color: var(--color-white);
 }
 
 /* *****************************************
@@ -223,23 +337,6 @@ main nav ul li{
 
 main nav ul li a{
     padding-bottom: 5px;
-}
-
-main nav ul li::after{
-    content: "";
-    display: block;
-    margin: 0 auto;
-    width: 40%;
-    height: 3px;
-    background-color: var(--color-highlight);
-    border-radius: 5px;
-    position: relative;
-    transition: all 0.2s;
-    opacity: 0;  
-}
-
-main nav ul li:hover::after{
-    opacity: 1;
 }
 
 #most-popular .card-img{
