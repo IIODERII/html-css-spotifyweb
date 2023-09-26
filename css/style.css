@@ -146,6 +146,10 @@ a{
     color: var(--color-light-grey);
 }
 
+img{
+    width: 100%;
+}
+
 /*****************************************
  *****************************************
                  main
@@ -185,6 +189,14 @@ main{
     padding: 90px 10px 0 10px;
 }
 
+.main-content h2{
+    font-size: 2em;
+}
+
+.main-content h3{
+    font-size: 1.2em;
+}
+
 /* navbar */
 
 main nav ul li{
@@ -199,24 +211,48 @@ main nav ul li::after{
     content: "";
     display: block;
     margin: 0 auto;
-    width: 30%;
+    width: 40%;
     height: 3px;
     background-color: var(--color-highlight);
-    transition: all 0.3s;
+    border-radius: 5px;
     position: relative;
     transition: all 0.2s;
-    opacity: 0;
+    opacity: 0;  
 }
 
 main nav ul li:hover::after{
     opacity: 1;
 }
 
-/* recently */
+#most-popular .card-img{
+    border-radius: 50%;
+    overflow: hidden;
+}
 
-#recently .card{
+#most-popular .card-img img{
+    object-fit: cover;
+    display: block;
+}
+
+.card{
     width: calc(100% / 6);
-    padding: 5px;
+    padding: 10px;
+    max-width: 300px;
+}
+
+.card-img{
+    position: relative;
+}
+
+.main-content .card .card-img:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /*****************************************
