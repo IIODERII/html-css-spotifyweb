@@ -65,7 +65,13 @@ body{
 /* *****************************************
                effetti hover
 ***************************************** */
+.hov-scale{
+    transition: all 0.2s;
+}
 
+.hov-scale:hover{
+    font-size: 1.1em;
+}
 
 /* *****************************************
                flex utilities
@@ -179,6 +185,17 @@ main{
     right: 0;
     top: 0;
     background-color: rgba(0, 0, 0, 0.5);
+    color: var(--color-white);
+    z-index: 1000;
+    text-align: end;
+}
+
+.cta .btn{
+    padding: 10px 20px;
+    border: 2px solid var(--color-white);
+    border-radius: 20px;
+    line-height: 70px;
+    margin-right: 25px;
 }
 
 /* *****************************************
@@ -238,6 +255,7 @@ main nav ul li:hover::after{
     width: calc(100% / 6);
     padding: 10px;
     max-width: 300px;
+    cursor: pointer;
 }
 
 .card-img{
