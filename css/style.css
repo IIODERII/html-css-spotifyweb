@@ -148,6 +148,7 @@ a{
 
 img{
     width: 100%;
+    display: block;
 }
 
 /*****************************************
@@ -231,7 +232,6 @@ main nav ul li:hover::after{
 
 #most-popular .card-img img{
     object-fit: cover;
-    display: block;
 }
 
 .card{
@@ -244,14 +244,24 @@ main nav ul li:hover::after{
     position: relative;
 }
 
-.main-content .card .card-img:after{
-    content: "";
+.card:hover > .card-img:after{
     display: block;
+}
+
+.card .card-img:after{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    content: "\f144";
+    font-size: 5vw;
+    padding: 25% 0;
+    text-align: center;
+    display: none;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    color: var(--color-white);
     background-color: rgba(0, 0, 0, 0.5);
 }
 
