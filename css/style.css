@@ -1,0 +1,184 @@
+/* *****************************************
+                setup
+***************************************** */
+
+:root {
+	--color-dark: #141922;
+	--color-dark-grey: #282828;
+	--color-black: #000000;
+	--color-white: #ffffff;
+	--color-grey: #717171;
+	--color-light-grey: #c1c1c1;
+	--color-highlight: #adff2f;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    background-color: var(--color-dark);
+}
+
+/* *****************************************
+                utilities
+***************************************** */
+.px-10{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.py-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.px-20{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.py-20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* *****************************************
+               effetti hover
+***************************************** */
+
+
+/* *****************************************
+               flex utilities
+***************************************** */
+.d-flex-r{
+    display: flex;
+    flex-direction: row;
+}
+
+.d-flex-c{
+    display: flex;
+    flex-direction: column;
+}
+
+.f-wrap{
+    flex-wrap: wrap;
+}
+
+.f-nowrap{
+    flex-wrap: nowrap;
+}
+
+.j-between{
+    justify-content: space-between;
+}
+
+.j-around{
+    justify-content: space-around;
+}
+
+.j-center{
+    justify-content: center;
+}
+
+.j-start{
+    justify-content: flex-start;
+}
+
+.j-end{
+    justify-content: flex-end;
+}
+
+.a-start{
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.a-end{
+    align-items: flex-end;
+    align-content: flex-end;
+}
+
+.a-center{
+    align-items: center;
+    align-content: center;
+}
+
+/*****************************************
+ *****************************************
+                content
+***************************************** 
+******************************************/
+.wrapper{
+    width: 100%;
+    height: 100vh;
+}
+
+h3 , h2{
+    color: var(--color-white);
+}
+
+/*****************************************
+ *****************************************
+                 main
+***************************************** 
+******************************************/
+main{
+    width: 100%;
+    height: calc(100% - 90px);
+}
+
+/* *****************************************
+                side-bar
+***************************************** */
+.sidebar{
+    width: 250px;
+}
+
+/* *****************************************
+                call to action
+***************************************** */
+.cta{
+    width: calc(100% - 250px);
+    height: 70px;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+/* *****************************************
+                main-content
+***************************************** */
+.main-content{
+    width: calc(100% - 250px);
+    overflow-y: auto;
+    padding: 90px 10px 0 10px;
+}
+
+#recently .card{
+    width: calc(100% / 6);
+    padding: 5px;
+}
+
+/*****************************************
+ *****************************************
+                play-bar
+***************************************** 
+******************************************/
+.playbar{
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* *****************************************
+               media query
+***************************************** */
