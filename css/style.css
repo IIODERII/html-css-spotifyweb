@@ -182,7 +182,7 @@ body{
     height: 100vh;
 }
 
-h3 , h2{
+h3 , h2 , h4{
     color: var(--color-white);
 }
 
@@ -387,7 +387,7 @@ main nav ul li a{
 ******************************************/
 .playbar{
     width: 100%;
-    height: 90px;
+    height: 120px;
     position: fixed;
     z-index: 1000;
     bottom: 0;
@@ -395,6 +395,89 @@ main nav ul li a{
     background-color: var(--color-dark-grey);
 }
 
+.playside{
+    width: 20%;
+    padding: 20px;
+    min-width: 320px;
+}
+
+.playside>div:first-child{
+    width: 65px;
+}
+
+.playside i{
+    font-size: 1.5em;
+}
+
+.playside .fa-regular:hover{
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.playside ul li{
+    padding: 0 15px;
+    color: var(--color-white);
+}
+
+.playside .fa-solid.fa-circle{
+    font-size: 1.2em;
+    display: none;
+}
+
+.playside ul .volume{
+    width: 180px;
+    height: 5px;
+    background-color: var(--color-grey);
+    border-radius: 5px;
+}
+
+.playside ul .act-vol{
+    width: 25%;
+    height: 5px;
+    background-color: var(--color-light-grey);
+    border-radius: 5px;
+}
+
+.playside ul li:last-child{
+    position: relative;
+}
+
+.playside ul li:last-child:hover > .fa-solid.fa-circle{
+    display: inline-block;
+    position: absolute;
+    bottom: -7px;
+    right: 150px;
+    cursor: grab;
+}
+
+.playcenter{
+    width: 45%;
+    color: var(--color-white);
+    font-weight: bold;
+}
+
+.playcenter ul li{
+    font-size: 1.5em;
+    padding: 0 20px;
+}
+
+.playcenter ul li .fa-circle-play{
+    font-size: 1.8em;
+}
+
+.playcenter .duration{
+    height: 5px;
+    width: 100%;
+    background-color: var(--color-grey);
+    border-radius: 5px;
+}
+
+.playcenter .duration .current{
+    height: 5px;
+    width: 25%;
+    background-color: var(--color-light-grey);
+    border-radius: 5px;
+}
 
 /* *****************************************
                media query
