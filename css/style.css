@@ -585,8 +585,13 @@ li.bars:hover  .fa-solid.fa-circle{
     margin-right: 20px;
 }
 
-#hm .hero .album:hover , #hm .play:hover{
+#hm .hero .album:hover{
     transform: scale(1.05);
+    cursor: pointer;
+}
+
+#hm .play:hover{
+    transform: scale(1.2);
     cursor: pointer;
 }
 
@@ -836,6 +841,11 @@ li.bars:hover  .fa-solid.fa-circle{
     .playcenter > div::after{
         display: block;
         content: "Sinister - Nome Brano";
+    }
+
+    #hm .playcenter > div::after{
+        display: block;
+        content: "Heavy Metal - Nome Brano";
     }
 
     .playcenter > div{
