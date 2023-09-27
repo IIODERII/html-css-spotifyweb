@@ -395,7 +395,7 @@ main nav ul li a{
     position: relative;
 }
 
-.card:hover > .card-img:after{
+.card:hover  .card-img:after{
     display: block;
 }
 
@@ -728,3 +728,9 @@ li.bars:hover  .fa-solid.fa-circle{
         justify-content: center;
     }
 }
+
+/*****************************************
+ *****************************************
+                heavy-metal page
+***************************************** 
+******************************************/
