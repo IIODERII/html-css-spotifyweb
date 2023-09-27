@@ -62,6 +62,10 @@ body{
     text-align: center;
 }
 
+.text-white{
+    color: var(--color-white);
+}
+
 /* *****************************************
                effetti hover
 ***************************************** */
@@ -734,3 +738,26 @@ li.bars:hover  .fa-solid.fa-circle{
                 heavy-metal page
 ***************************************** 
 ******************************************/
+
+:root{
+    --color-hero-bg: linear-gradient(to bottom, #5A2B22 0%, 23.920736022646853%, #60624D 47.841472045293706%, 73.92073602264685%, #302A7C 100%);  
+}
+
+#hm .main-content{
+    background-image: var(--color-hero-bg);
+    padding: 100px 0 50px 30px;
+}
+
+#hm .hero h2{
+    font-size: 5em;
+}
+
+#hm .hero .album{
+    width: 25%;
+    box-shadow: 0 0 30px #000;
+    transition: all 0.2s;
+}
+
+#hm .hero .album:hover{
+    transform: scale(1.05);
+}
