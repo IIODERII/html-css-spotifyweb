@@ -25,23 +25,27 @@
         <main class="d-flex-r">
             <nav class="sidebar">
                 <div class="sidebar-top">
-                    <img src="img/logo.svg" alt="Spotify logo">
-                    <ul class="px-20">
-                        <li class="hov-highlight-v"><a href="#" class="hov-white"><img src="img/home.svg" alt="Home"> <span>Home</span></a></li>
-                        <li class="hov-highlight-v"><a href="#" class="hov-white"><img src="img/search.svg" alt="Cerca"> <span>Cerca</span></a></li>
-                        <li class="hov-highlight-v"><a href="#" class="hov-white"><img src="img/libreria.svg" alt="Libreria"> <span>La tua libreria</span></a></li>
-                    </ul>
-                    <h3 class="text-uppercase">playlist</h3>
-                    <ul class="px-20">
-                        <li><a href="#" class="hov-white"><i class="fa-solid fa-square-plus"></i> <span>Crea Playlist</span></a></li>
-                        <li><a href="#" class="hov-white"><span>Nome Playlist</span></a></li>
-                        <li><a href="#" class="hov-white"><span>Nome Playlist</span></a></li>
-                        <li><a href="#" class="hov-white"><span>Nome Playlist</span></a></li>
-                        <li><a href="#" class="hov-white"><span>Nome Playlist</span></a></li>
-                        <li><a href="#" class="hov-white"><span>Nome Playlist</span></a></li>
-                        <li><a href="#" class="hov-white"><span>Nome Playlist</span></a></li>
-                        <li><a href="#" class="hov-white"><span>Nome Playlist</span></a></li>
-                    </ul>
+                    <div class="sidebar-top-top">
+                        <img src="img/logo.svg" alt="Spotify logo" class="logo">
+                        <ul class="px-20">
+                            <li class="hov-highlight-v"><a href="#" class="hov-white"><img src="img/home.svg" alt="Home"> <span>Home</span></a></li>
+                            <li class="hov-highlight-v"><a href="#" class="hov-white"><img src="img/search.svg" alt="Cerca"> <span>Cerca</span></a></li>
+                            <li class="hov-highlight-v"><a href="#" class="hov-white"><img src="img/libreria.svg" alt="Libreria"> <span>La tua libreria</span></a></li>
+                        </ul>
+                    </div>
+
+                        <h3 class="text-uppercase">playlist</h3>
+                        <ul class="px-20">
+                            <li><a href="#" class="hov-white"><i class="fa-solid fa-square-plus"></i> <span>Crea Playlist</span></a></li>
+                            <li><a href="#" class="hov-white"><span>Nome Playlist</span></a></li>
+                            <li><a href="#" class="hov-white"><span>Nome Playlist</span></a></li>
+                            <li><a href="#" class="hov-white"><span>Nome Playlist</span></a></li>
+                            <li><a href="#" class="hov-white"><span>Nome Playlist</span></a></li>
+                            <li><a href="#" class="hov-white"><span>Nome Playlist</span></a></li>
+                            <li><a href="#" class="hov-white"><span>Nome Playlist</span></a></li>
+                            <li><a href="#" class="hov-white"><span>Nome Playlist</span></a></li>
+                        </ul>
+
                 </div>
                 
                 <div class="sidebar-bot">
@@ -52,7 +56,7 @@
 
             <div class="main-content">
                 <nav>
-                    <ul class="d-flex-r j-center text-uppercase">
+                    <ul class="d-flex-r f-wrap j-center text-uppercase">
                         <li class="hov-highlight-h"><a href="#" class="d-block hov-white">in evidenza</a></li>
                         <li class="hov-highlight-h"><a href="#" class="d-block hov-white">podcast</a></li>
                         <li class="hov-highlight-h"><a href="#" class="d-block hov-white">classifiche</a></li>
@@ -65,7 +69,7 @@
                 <section id="recently" class="py-20 px-10">
                     <h2 class="py-10 px-10">Recently played</h2>
 
-                    <div class="album d-flex-r">
+                    <div class="album d-flex-r f-wrap">
                         <div class="card">
                             <div class="card-img">
                                 <img src="img/metal_lifting.jpg" alt="Heavy Metal">
@@ -138,7 +142,7 @@
                     <h2 class="px-10">Creato per John Doe</h2>
                     <p class="py-10 px-10">Più ascolti, più accurati saranno i suggerimenti.</p>
 
-                    <div class="album d-flex-r j-start py-10">
+                    <div class="album d-flex-r j-start f-wrap py-10">
                         <div class="card">
                             <div class="card-img">
                                 <img src="img/radar.jpeg" alt="Release Radar">
@@ -165,7 +169,7 @@
                     <h2 class="px-10">Artisti più popolari</h2>
                     <p class="py-10 px-10">Più ascolti, più accurati saranno i suggerimenti.</p>
 
-                    <div class="album d-flex-r j-start py-10">
+                    <div class="album d-flex-r j-start py-10 f-wrap">
                         <div class="card">
                             <div class="card-img">
                                 <img src="img/youg.jpeg" alt="Lana del Rey">
@@ -191,13 +195,16 @@
         </main>
 
         <div class="playbar d-flex-r j-between a-center">
-            <div class="playside d-flex-r a-center">
+            <div class="playside d-flex-r a-center j-start">
                 <div><img src="img/sinister.jpeg" alt="Sinister"></div>
                 <div class="px-20">
                     <h4>Sinister</h4>
                     <span class="hov-underline">Brano Nome</span>
                 </div>
-                <div><i class="fa-regular fa-heart px-10"></i> <i class="fa-regular fa-folder"></i></div>
+                <div class="d-flex-r f-wrap j-center a-center">
+                    <i class="fa-regular fa-heart px-10"></i>
+                     <i class="fa-regular fa-folder"></i>
+                </div>
             </div>
 
             <div class="playcenter">
@@ -219,14 +226,15 @@
                 </div>
             </div>
 
-            <div class="playside d-flex-r a-center j-between">
-                <ul class="d-flex-r a-center">
+            <div class="playside">
+                <ul class="d-flex-r a-center j-end">
                     <li><i class="fa-solid fa-list-ul"></i></li>
                     <li><i class="fa-solid fa-desktop"></i></li>
-                    <li><i class="fa-solid fa-volume-high"></i></li>
-                    <li class="bars">
-                        <i class="fa-solid fa-circle"></i>
+                    
+                    <li class="bars d-flex-r a-center j-between">
+                        <i class="fa-solid fa-volume-high"></i>
                         <div class="volume total">
+                            <i class="fa-solid fa-circle"></i>
                             <div class="act-vol current hov-green"></div>
                         </div>
                     </li>
