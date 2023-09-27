@@ -66,6 +66,10 @@ body{
     color: var(--color-white);
 }
 
+.text-grey{
+    color: var(--color-light-grey);
+}
+
 /* *****************************************
                effetti hover
 ***************************************** */
@@ -544,6 +548,103 @@ li.bars:hover  .fa-solid.fa-circle{
     cursor: grab;
 }
 
+/*****************************************
+ *****************************************
+                heavy-metal page
+***************************************** 
+******************************************/
+
+:root{
+    --color-hero-bg: linear-gradient(to bottom, #5A2B22 0%, 23.920736022646853%, #60624D 47.841472045293706%, 73.92073602264685%, #302A7C 100%);  
+}
+
+#hm .main-content div{
+    font-size: 20px;
+}
+
+#hm .main-content{
+    background-image: var(--color-hero-bg);
+    padding: 100px 0 0 0;
+}
+
+#hm .hero{
+    padding-bottom: 50px;
+    padding-left: 50px;
+}
+
+#hm .hero h2{
+    font-size: 5em;
+}
+
+#hm .hero .album{
+    width: 25%;
+    min-width: 400px;
+    box-shadow: 0 0 30px var(--color-black);
+    transition: all 0.2s;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+#hm .hero .album:hover , #hm .play:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#hm .songs{
+    background-color: rgba(1, 1, 1, 0.4);
+    padding: 50px;
+}
+
+#hm .buttons{
+    font-size: 2em;
+}
+
+#hm .buttons .play{
+    color: var(--color-black);
+    background-color: var(--color-highlight);
+    border-radius: 50%;
+    font-size: 0.8em;
+    width: 1.5em;
+    height: 1.5em;
+    transition: 0.2s;
+}
+
+#hm .list > .d-flex-r{
+    border-bottom: 1px solid var(--color-light-grey); 
+}
+
+#hm ol{
+    padding-left: 35px;
+}
+
+#hm ol li{
+    padding: 20px 10px;
+    position: relative;
+}
+
+#hm ol li:hover{
+    background-color: rgba(2,2,2,0.4);
+    border-radius: 8px;
+    list-style: none;
+}
+
+#hm audio{
+    visibility: hidden;
+    position: absolute;
+    left: -45px;
+    bottom: 20px;
+}
+
+#hm audio::-webkit-media-controls-play-button{
+    display: block;
+    visibility: hidden;
+    filter: invert(1);
+}
+
+#hm ol li:hover > audio::-webkit-media-controls-play-button{
+    visibility: visible;
+}
+
 /* *****************************************
                media query
 ***************************************** */
@@ -646,12 +747,38 @@ li.bars:hover  .fa-solid.fa-circle{
         display: block;
         padding-top: 10px;
     }
+
+    #hm .main-content .hero {
+        justify-content: center;
+    }
+
+    #hm .main-content .hero .album{
+        min-width: 200px;
+        width: 100%;
+        margin-right: 50px;
+    }
+
+    #hm .main-content .hero h2{
+        font-size: 3em;
+    }
+
+    #hm .fa-clock , #hm ol li>div>span{
+        display: none;
+    }
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 607px){
 
      .sidebar-top >ul , .sidebar h3, .sidebar strong , .sidebar span , .sidebar .logo{
         display: none;
+     }
+
+     .sidebar-top-top > a{
+        display: block;
+        height: 40px;
+        width: 40px;
+        top: -45px;
+        position: absolute;
      }
 
      .card .card-img:after{
@@ -671,6 +798,7 @@ li.bars:hover  .fa-solid.fa-circle{
         width: 50%;
         display: block;
         margin: 10px auto;
+        
      }
 
      .main-content , .cta{
@@ -717,6 +845,7 @@ li.bars:hover  .fa-solid.fa-circle{
     .sidebar-bot>div:first-child::after{
         display: none;
     }
+    
 }
 
 @media screen and (max-width: 460px) {
@@ -731,33 +860,4 @@ li.bars:hover  .fa-solid.fa-circle{
     .album{
         justify-content: center;
     }
-}
-
-/*****************************************
- *****************************************
-                heavy-metal page
-***************************************** 
-******************************************/
-
-:root{
-    --color-hero-bg: linear-gradient(to bottom, #5A2B22 0%, 23.920736022646853%, #60624D 47.841472045293706%, 73.92073602264685%, #302A7C 100%);  
-}
-
-#hm .main-content{
-    background-image: var(--color-hero-bg);
-    padding: 100px 0 50px 30px;
-}
-
-#hm .hero h2{
-    font-size: 5em;
-}
-
-#hm .hero .album{
-    width: 25%;
-    box-shadow: 0 0 30px #000;
-    transition: all 0.2s;
-}
-
-#hm .hero .album:hover{
-    transform: scale(1.05);
 }
