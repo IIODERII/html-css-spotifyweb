@@ -666,12 +666,80 @@ li.bars:hover  .fa-solid.fa-circle{
     font-weight: bold;
 }
 
+#search input{
+    background-color: var(--color-dark-grey);
+    border: 1px solid var(--color-white);
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    margin-left: 15px;
+}
+
+#search .fa-magnifying-glass{
+    position: absolute;
+    right: 15px;
+    top: 16px;
+    cursor: pointer;
+}
+
+#search .categories{
+    padding-top: 15px;
+}
+
+#search .categories h2{
+    padding-left: 15px;
+}
+
+#search .col{
+    padding: 15px;
+}
+
+#search .card{
+    border-radius: 10px;
+    height: 200px;
+    overflow: hidden;
+}
+
+#search .col:nth-child(odd) .card{
+    background-color: #006450;
+}
+
+#search .col:nth-child(even) .card{
+    background-color: #7358ff;
+}
+
+#search .card img{
+    position: relative;
+    width: 70%;
+    transform: rotate(35deg);
+    top: 75px;
+    left: 80px;
+}
+
+#search .hov-scale:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#search .col{
+    width: calc(100% / 6);
+    min-width: 180px;
+}
+
+#search .card{
+    width: 100%
+}
+
 /* *****************************************
                media query
 ***************************************** */
 
 @media screen and (max-width: 992px){
     .card{
+        width: calc(100% / 4);
+    }
+
+    #search .col{
         width: calc(100% / 4);
     }
 
