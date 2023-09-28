@@ -625,6 +625,7 @@ li.bars:hover  .fa-solid.fa-circle{
 #hm ol li{
     padding: 20px 10px;
     position: relative;
+    transition: all 0.3s;
 }
 
 #hm ol li:hover{
