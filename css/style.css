@@ -651,6 +651,21 @@ li.bars:hover  .fa-solid.fa-circle{
     visibility: visible;
 }
 
+/*****************************************
+ *****************************************
+                search page
+***************************************** 
+******************************************/
+
+#search .hov-highlight-v:nth-child(2):before{
+    opacity: 1;   
+}
+
+#search .sidebar .sidebar-top-top li:nth-child(2){
+    color: var(--color-white);
+    font-weight: bold;
+}
+
 /* *****************************************
                media query
 ***************************************** */
