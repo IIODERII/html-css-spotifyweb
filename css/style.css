@@ -871,4 +871,17 @@ li.bars:hover  .fa-solid.fa-circle{
     .album{
         justify-content: center;
     }
+
+    .playcenter li i , .playcenter span{
+        padding: 0;
+    }
+
+    .cta .btn{
+        font-size: 0.7em;
+        transition: all 0.2s;
+    }
+
+    .cta .btn:hover{
+        font-size: 0.8em;
+    }
 }
