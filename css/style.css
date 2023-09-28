@@ -661,7 +661,7 @@ li.bars:hover  .fa-solid.fa-circle{
     opacity: 1;   
 }
 
-#search .sidebar .sidebar-top-top li:nth-child(2){
+#search .sidebar .sidebar-top-top li:nth-child(2) a{
     color: var(--color-white);
     font-weight: bold;
 }
@@ -675,7 +675,11 @@ li.bars:hover  .fa-solid.fa-circle{
     margin-left: 15px;
 }
 
-#search .fa-magnifying-glass{
+#search .sidebar .fa-magnifying-glass{
+    font-size: 1.3em;
+}
+
+#search .main-content .fa-magnifying-glass{
     position: absolute;
     right: 15px;
     top: 16px;
